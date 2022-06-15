@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.kuleuven.spot">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SPOT">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBhoNwv91HYmnkW2TjOsrYEGAka5lUhDHk"/>
+
+        <activity
+            android:name=".activity.activity_changeProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity_changePassword"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity_add_one"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity_home"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity_register"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity_login"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
